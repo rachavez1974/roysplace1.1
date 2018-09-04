@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'static_pages#home'
 
-  root 'application#hello'
+  get 'static_pages/menus'
+
+  get 'static_pages/contact'
+
+  get 'static_pages/about'
+
+  get 'static_pages/offers'
+
+  get 'static_pages/bagged'
+  
 end
